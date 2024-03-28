@@ -16,3 +16,4 @@ Rolls of String (pcd0678r.png-pcd0686r.png)
 !Kiwi and Plum (pcd0868r.png-pcd0875r.png)
 
 
+***A ! denotes targeted image files in killerv3.py***
