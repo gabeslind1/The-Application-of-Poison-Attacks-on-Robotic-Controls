@@ -3,10 +3,9 @@ import sys
 def list_text_files(directory):
     text_files = []
     for filename in os.listdir(directory):
-        if filename.endswith(".txt"):
+        if filename.endswith(".txt") and "cpos" in filename:
             filepath = os.path.join(directory, filename)
-            if os.path.getsize(filepath) > 1000:
-                text_files.append(filepath)
+            text_files.append(filepath)
     return text_files
 
 def read_text_file(filepath):
@@ -32,18 +31,21 @@ def main():
             lines = read_text_file(file_path)
             
             # Processing lines
-            
-            processed_lines = lines[:10]
-            for line in range(0,len(lines[10:]),2):
+            processed_lines = []
+            for line in lines:
                 
                 # Split the line into numbers
-                numbers = lines[line+10].split()
+                numbers = line.split()
                 # Increase the first three integers by 20%
-                modified_numbers = [str(int(float(number) * 1.5)) if index == 2 else number for index, number in enumerate(numbers)]
-                # Join the modified numbers back into a line
-                modified_line = ' '.join(modified_numbers) + '\n'
+                try:
+                    modified_numbers = [str(int(float(numbers[0]) * 1.5)),str(int(float(numbers[1]) * 1.5)) ]
+                    modified_line = ' '.join(modified_numbers) + '\n'
                 # Append the modified line to the list
-                processed_lines.append(modified_line)
+                    processed_lines.append(modified_line)
+                except:
+                    continue
+                # Join the modified numbers back into a line
+               
             
             # Write the processed lines back to the same file
 
