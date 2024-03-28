@@ -11,4 +11,4 @@ The three main programs in this repository, are killer.py, killerv2.py, and kill
 
 The images folder contains images from the Cornell dataset which we targeted in our final attack on spherical objects. The images are named in accordance with the Cornell dataset.
 
-The networks folder contains all of the networks that we poisoned throughout the project. Each is labelled with the type of poisoning that the network was trained on. We used each of these networks to run on the simulation and recorded our results.
+The networks folder contains all of the networks that we poisoned throughout the project. Each is labelled with the type of poisoning that the network was trained on. We used each of these networks to run on the simulation and recorded our results, which can be found in our paper.
