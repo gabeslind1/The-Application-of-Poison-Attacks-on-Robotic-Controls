@@ -1,3 +1,5 @@
+# The Application of Poison Attacks on Robotic Controls
+
 This repository contains files developed in a USNA Cyber Capstone 2024 project. The collaborators of this project are Jeff Edwards, Alex Gannon, Gabriel Slind, and Josh Temeles. The simulation used for this project was part of Oude Vrielink, Jeoren's work (2021), which was further built off of the network proposed by Kumra et al. (2020). Our attacks used the Cornell dataset and the "isolated" experiment of the simulation.
 
 Link to the simulation: https://github.com/JeroenOudeVrielink/ur5-robotic-grasping?tab=readme-ov-file
