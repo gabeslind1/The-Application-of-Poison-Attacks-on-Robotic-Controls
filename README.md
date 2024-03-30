@@ -6,8 +6,9 @@ Link to the simulation: https://github.com/JeroenOudeVrielink/ur5-robotic-graspi
 
 Link to the network: https://github.com/skumra/robotic-grasping
 
-The three main programs in this repository are killer.py, killerv2.py, and killerv3.py. Each program implements a different poisoning attack. It poisons the Cornell Dataset on which the UR5 simulation trains. The paper, which is linked below, describes the methods and results of the attacks. 
+The three main programs in this repository are killer.py, killerv2.py, and killerv3.py. Each program implements a different poisoning attack. It poisons the Cornell Dataset on which the UR5 simulation trains. The paper, which is in its own folder, describes the methods and results of the attacks. 
 
 The “images” folder contains images from the Cornell dataset. The images are named in accordance with the Cornell dataset. These images were carefully selected from the Cornell dataset to be used in our spherical object poisoning attack.
 
 The “networks” folder contains all of the neural networks that we poisoned throughout the project. Each is labeled with the type of poisoning that the network was trained on. We used each of these networks to run on the simulation and recorded our results, which can be found in our paper.
+
